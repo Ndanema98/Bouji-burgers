@@ -1,0 +1,81 @@
+{% load static %}
+
+{% load bootstrap5 %} 
+
+{% load active_link_tags %}
+
+<html class="h-100" lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+
+        <!-- Favicon link -->
+        <link rel="shortcut icon" href="https://res.cloudinary.com/fernandascloud/image/upload/v1636886150/media/favicon_s0na8a.ico" />
+
+        <!-- Google Fonts link -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      
+
+        <!-- Fontawesome link -->
+        
+
+        <!-- Bootstrap CSS link -->
+        
+
+        <!-- Bootstrap JS -->
+     
+
+        <!-- My CSS link -->
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+        {% block additional_styles %}
+        {% endblock  %}
+
+        <title> Bouji-Burgers | 
+            {% block title %}
+            {% endblock title %}
+        </title>
+    </head>
+    <body>
+        <header>
+            <div class="row no-gutters">
+                <a href="index.html" class="col-md-4 logo">
+
+                </a>
+
+                <div class="col-md-8">
+                    <div class="row no-gutters bg-color-title" >
+                        <div class="col heading">
+                            <h1 class="title">Gourmet Burgers</h1>
+                        </div>
+                    </div>
+                    <div class="row no-gutters">
+                        <div class="col">
+                            <ul id="nav" class="list-inline navcontainer">
+                                <li class="col-6 col-sm-3 ui-menu-color-home list-inline-item menuitem">
+                                    <a href="#" class="hvr-bounce-to-bottom"><i class="fa fa-home" aria-hidden="true"></i><span>Home</span></a>
+                                </li>
+                                <li class="col-6 col-sm-3 ui-menu-color-book list-inline-item menuitem">
+                                    <a href="#" class="hvr-bounce-to-bottom"><i class="fa fa-book-open" aria-hidden="true"></i><span>Book A Table</span></a>
+                                </li>
+                                <li class="col-6 col-sm-3 ui-menu-color-menu list-inline-item menuitem">
+                                    <a href="#" class="hvr-bounce-to-bottom"><i class="fa fa-utensils" aria-hidden="true"></i><span>Menu</span></a>
+                                </li>
+                                <li class="col-6 col-sm-3 ui-menu-color-contact list-inline-item menuitem">
+                                    <a href="#" class="hvr-bounce-to-bottom"><i class="fa fa-phone" aria-hidden="true"></i><span>Leave a review</span></a>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+
+
+</html>
